@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 1</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="vue_det">
+        <h2>site : {{name}}</h2>
+        <h2>url : {{url}}</h2>
+        <h2>{{details()}}</h2>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#vue_det',
+            data: {
+                name: "菜鸟",
+                url: "www.lpf.com",
+                alexa: "10000"
+            },
+            methods: {
+                details: function() {
+                    return  this.name + " - 学的不仅是技术，更是梦想！";
+                }
+            }
+        })
+
+        document.write(vm.$el === document.getElementById('vue_det')) // true
+    </script>
+
+
+    <div id="app">
+        {{5+5}}<br>
+        {{ ok ? 'YES' : 'NO' }}<br>
+        {{ message.split('').reverse().join('') }}
+        <div v-bind:id="'list-' + id">菜鸟教程</div>
+    </div>
+        
+    <script>
+    new Vue({
+    el: '#app',
+    data: {
+        ok: true,
+        message: 'RUNOOB',
+        id : 1
+    }
+    })
+    </script>
+</body>
+</html>
