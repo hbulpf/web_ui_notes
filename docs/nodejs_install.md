@@ -20,12 +20,23 @@ tar -xvf  node-v10.16.0-linux-x64.tar.gz
 mv node-v10.16.0-linux-x64 /opt/nodejs
 ```
 
-创建软连接变量
+创建软连接变量来加入系统变量
 
 ```
 ln -s /opt/nodejs/bin/npm   /usr/local/bin/ 
 ln -s /opt/nodejs/bin/node   /usr/local/bin/
 ln -s /opt/nodejs/bin/npx   /usr/local/bin/
+```
+
+注: 
+这种方式如果需要其他npm工具时需要增加新的链接，可以将  `/opt/nodejs/bin` 加入系统环境变量
+
+```
+cat <<EOM >>/etc/profile
+#npm 
+export PATH="/opt/nodejs/bin:$PATH"
+EOM
+source /etc/profile
 ```
 
 
