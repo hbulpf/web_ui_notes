@@ -100,32 +100,30 @@ var fs = require("fs");
 ###### 方法
 
 - 打开文件
-    fs.open(path, flags[, mode], callback)
-    fs.openSync(path, flags[, mode])
+    - fs.open(path, flags[, mode], callback)
+    - fs.openSync(path, flags[, mode])
     
 - 读写文件
-    fs.write(fd, string[, position[, encoding]], callback)
-    fs.writeSync(fd, string[, position[, encoding]])
-    
-    fs.read(fd, buffer, offset, length, position, callback)
-    fs.readSync(fd, buffer, offset, length, position)
+    - fs.write(fd, string[, position[, encoding]], callback)
+    - fs.writeSync(fd, string[, position[, encoding]])
+    - fs.read(fd, buffer, offset, length, position, callback)
+    - fs.readSync(fd, buffer, offset, length, position)
     
 - 关闭文件
-    fs.close(fd,callback)
-    fs.closeSync(fd);
+    - fs.close(fd,callback)
+    - fs.closeSync(fd);
     
 - 简单文件读取和写入
-    fs.writeFile(file, data[, options], callback)
-    fs.writeFileSync(file, data[, options])
-    
-    fs.readFile(path[, options], callback)
-    fs.readFileSync(path[, options])
+    - fs.writeFile(file, data[, options], callback)
+    - fs.writeFileSync(file, data[, options])
+    - fs.readFile(path[, options], callback)
+    - fs.readFileSync(path[, options])
     
     
 - 流式文件读取和写入
     - 流式读取和写入适用于一些比较大的文件
-        fs.createWriteStream(path[, options])
-        fs.createReadStream(path[, options])
+        - fs.createWriteStream(path[, options])
+        - fs.createReadStream(path[, options])
 
 # 参考
 1. [nodejs.cn](http://nodejs.cn/)
