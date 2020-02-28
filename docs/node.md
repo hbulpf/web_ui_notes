@@ -46,6 +46,16 @@ npm s/search 包名 搜索包
 npm r/remove 包名 删除一个包
 ```
 
+查看当前项目的依赖模块：
+```
+npm ls --depth 0
+```
+查看全局依赖模块命令：
+```
+npm ls -g --depth 0
+```
+
+
 [cnpm](http://npm.taobao.org/) 是淘宝 NPM 镜像，一个完整 npmjs.org 镜像。  
 安装淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
 
