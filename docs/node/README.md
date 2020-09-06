@@ -1,4 +1,4 @@
-node 命令
+# node
 
 ## node 的包结构
 ```
@@ -55,15 +55,42 @@ npm ls --depth 0
 npm ls -g --depth 0
 ```
 
+## 使用npm镜像
+### 使用原生资源命令
+```
+# 安装依赖，使用淘宝资源命令 cnpm
+npm install
+
+# 启动应用，地址为 localhost:8080
+npm run dev
+
+# 如果你需要发布到正式环境可以执行以下命令：
+npm run build
+```
+
+### 使用淘宝资源命令
 
 [cnpm](http://npm.taobao.org/) 是淘宝 NPM 镜像，一个完整 npmjs.org 镜像。  
 安装淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
 
-```shell script
+```bash
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 日常可以同时使用 npm 和 cnpm 来安装 nodejs 组件，而不是使用 cnpm 代替 npm。
+
+```bash
+# 安装依赖，使用淘宝资源命令 cnpm
+cnpm install
+
+# 启动应用，地址为 localhost:8080
+cnpm run dev
+
+# 如果你需要发布到正式环境可以执行以下命令：
+cnpm run build
+```
+
+
 
 ## 文件系统（File System）
 ### Buffer（缓冲区）

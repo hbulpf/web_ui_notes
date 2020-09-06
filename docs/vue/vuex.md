@@ -90,8 +90,12 @@
 	  dispatch(actionName, data): 分发action 
 
 # 5. 将vuex引到项目中
-## 1). 下载: npm install vuex --save
-## 2). 使用vuex
+1. 下载: 
+	```
+	npm install vuex --save
+	```
+2. 使用vuex
+	```
 	1.store.js
 		import Vuex from 'vuex'
 		export default new Vuex.Store({
@@ -106,3 +110,4 @@
 		new Vue({
 			store
 		})
+	```

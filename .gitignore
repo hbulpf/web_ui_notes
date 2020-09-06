@@ -1,37 +1,49 @@
-# Compiled class file
-*.class
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-#MAC System File
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# Log file
-*.log
+# Thumbnails
+._*
 
-# BlueJ files
-*.ctxt
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-#bin
-bin/
-.idea
-*.iml
-.settings
-.project
-.classpath
-/out
-
-# vue
-**/node_modules
+# npm
+_book/
+node_modules/
+package-lock.json
+.idea/

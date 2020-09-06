@@ -1,4 +1,4 @@
-# 安装Node js
+# 安装Node
 
 推荐淘宝镜像 https://npm.taobao.org/mirrors/
 
