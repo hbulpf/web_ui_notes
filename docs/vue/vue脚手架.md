@@ -39,19 +39,24 @@ npm test
 ```
 
 ## FAQ
-### vue本地无法下载模板
+### vue使用脚手架初始化时本地无法下载模板
 
 通过vue-cli工具命令vue init webpack vuedemo创建vue项目的时候报错，提示连接超时，应该是下载某个package的时候，需要翻墙，导致出现连接超时。超时错误截图如下：
 
+![](imgs/1.png)
 
+这种情况可以使用离线创建的办法，我们需要下载github中的 vue-templates/webpack 仓库到本地。下载地址为：https://github.com/vuejs-templates/webpack . 
 
-按照网络上的提示，解决办法是改为离线创建，我们需要下载github仓库中的vue-templates/webpack，然后解压到本地。下载地址为：https://github.com/vuejs-templates/webpack，下载之后，解压到本地用户目录下的.vue-templates目录下。
+下载后，解压到本地用户目录下的 `.vue-templates` 目录下。
 
+![](imgs/2.png)
 
+我们解压之后，更改目录名为 `webpack` 。放到本地用户目录 `.vue-templates` 下面，注意文件夹名称前面的点。
 
-下载之后的压缩包为webpack-develop.zip，我们解压之后，需要更改目录名为webpack。用户目录下的目录为.vue-templates，注意文件夹名称前面的点(.)。
-
-这样，我们再进行vue init webpack vuedemo命令的时候，需要带上参数--offline表示离线初始化。
+再进行 `vue init webpack vuedemo` 时，需要带上参数 `--offline` 表示离线初始化。
+```
+vue init webpack vuedemo --offline
+```
 
 
 ## 参考
