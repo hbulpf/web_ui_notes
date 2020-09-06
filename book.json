@@ -31,12 +31,12 @@
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/hbulpf/devbook"
+            "url": "https://github.com/hbulpf/web_ui_notes"
         },
         "github-buttons": {
             "buttons": [{
                 "user": "hbulpf",
-                "repo": "devbook",
+                "repo": "web_ui_notes",
                 "type": "star",
                 "size": "small",
                 "count": true
@@ -44,7 +44,7 @@
             ]
         },
         "sitemap-general": {
-            "prefix": "http://hecloud.hnbdata.cn/devbook"
+            "prefix": "http://hecloud.hnbdata.cn/web_ui_notes"
         },
         "donate": {
             "alipay": "./source/images/donate.png",
