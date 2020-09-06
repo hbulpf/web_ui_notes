@@ -13,4 +13,4 @@
 * [vuex](docs/vue/vuex.md)
 
 ## 原生JS
-[JS插件](docs/js/js_plugins.md)
+* [JS插件](docs/js/js_plugins.md)
