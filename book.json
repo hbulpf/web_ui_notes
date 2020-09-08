@@ -27,7 +27,10 @@
         "toggle-chapters", 
         "theme-comscore",
         "-lunr", "-search", "search-plus",
-        "sitemap-general"
+        "sitemap-general",
+        "tbfed-pagefooter",
+        "include-codeblock",
+        "graph","chart"
     ],
     "pluginsConfig": {
         "github": {
@@ -77,6 +80,17 @@
         },
         "anchor-navigation-ex": {
             "showLevel": false
+        },        
+        "tbfed-pagefooter": {
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "include-codeblock": {
+            "template": "ace",
+            "theme": "monokai"
+        },
+        "chart": {
+            "type": "c3"
         },
         "favicon":{
             "shortcut": "./source/images/favicon.jpg",
