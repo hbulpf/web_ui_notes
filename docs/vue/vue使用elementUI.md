@@ -109,7 +109,11 @@ Vue.use(ElementUI);
 
 ## 前后端交互
 
-前后端交互，要安装axios, 并且在main.js配置（安装跟引入 跟elementui一样）
+前后端交互，要安装 [axios](http://www.axios-js.com/), 并且在main.js配置（安装跟引入 跟elementui一样）
+
+```
+npm i -S axios
+```
 
 页面对接代码：
 ```

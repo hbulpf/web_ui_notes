@@ -12,6 +12,7 @@
 * [vueSource](docs/vue/vueSource.md)
 * [vueTest](docs/vue/vueTest.md)
 * [vuex](docs/vue/vuex.md)
+* [axios与原生ajax对比](docs/vue/axios与原生ajax对比.md)
 
 ## 原生JS
 * [JS插件](docs/js/js_plugins.md)
