@@ -16,3 +16,6 @@
 
 ## 原生JS
 * [JS插件](docs/js/js_plugins.md)
+
+## 其他
+* [静态网站生成器](docs/其他/静态网站生成器.md)
