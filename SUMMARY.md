@@ -13,9 +13,15 @@
 * [vueTest](docs/vue/vueTest.md)
 * [vuex](docs/vue/vuex.md)
 * [axios与原生ajax对比](docs/vue/axios与原生ajax对比.md)
+* [vue使用ElementUI常见问题](docs/vue/vue使用ElementUI常见问题.md)
 
 ## 原生JS
 * [JS插件](docs/js/js_plugins.md)
 
 ## 其他
+
 * [静态网站生成器](docs/其他/静态网站生成器.md)
+
+## 学习计划
+
+* [前端成长计划](docs/学习计划/前端成长计划.md)

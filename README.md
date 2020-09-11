@@ -17,7 +17,9 @@
 
 ### 推荐资料
 1. [vuejs官网](vuejs.org)
-1. [vuejs中文网](https://cn.vuejs.org/v2/guide/)
+2. [vuejs中文网](https://cn.vuejs.org/v2/guide/)
+3. [Vue.js 开发基础教程](https://www.html.cn/study/4.html)
+4. [菜鸟教程 - Vue.js 教程](https://www.runoob.com/vue2/vue-tutorial.html)
 
 ### 推荐开源项目
 1. [elementUI](https://element.eleme.cn/)
@@ -40,5 +42,11 @@
 ## 其他
 * [静态网站生成器](docs/其他/静态网站生成器.md)
 
-## 前端推荐资源
+## 学习计划
+
+* [前端成长计划](docs/学习计划/前端成长计划.md)
+
+
+### 前端推荐资源
+
 1. [Web全栈职业养成计划](https://github.com/MiYogurt/nodelover-maps)
