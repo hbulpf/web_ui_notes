@@ -10,18 +10,3 @@
 1. [ztree](https://github.com/zTree/zTree_v3)
 
 
-## vue 开发 plugin
-
-1. vue一系列的扩展插件(库):
-    * vue-cli: vue脚手架
-    * vue-resource(axios): ajax请求
-    * vue-router: 路由
-    * vuex: 状态管理
-    * vue-lazyload: 图片懒加载
-    * vue-scroller: 页面滑动相关
-    * mint-ui: 基于vue的组件库(移动端)
-    * element-ui: 基于vue的组件库(PC端)
-
-2. vue 开发插件
-    * Vue.js devtools:vue chrome 开发插件, [下载插件](http://chromecj.com/web-development/2018-01/886.html) [查看源码](https://github.com/vuejs/vue-devtools)
-

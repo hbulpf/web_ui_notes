@@ -23,7 +23,7 @@
 <div id="example">
 
   <h2>1. 绑定监听</h2>
-  <button @click="test1">test1</button>
+  <button @click="test1"><span>test1</span></button>
   <button @click="test2('abc')">test2</button>
   <button @click="test3('abcd', $event)">test3</button>
 
@@ -41,13 +41,13 @@
 
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
-  new Vue({
+const vm = new Vue({
     el: '#example',
     data: {
 
     },
     methods: {
-      test1(event) {
+      test1(event) { //不传相当于传了 event
         alert(event.target.innerHTML)
       },
       test2 (msg) {
@@ -69,6 +69,7 @@
       },
 
       test7 (event) {
+        console.log(this)
         console.log(event.keyCode)
         alert(event.target.value)
       }

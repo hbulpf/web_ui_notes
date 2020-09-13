@@ -17,16 +17,17 @@
   计算属性存在缓存, 多次读取只执行一次getter计算
 -->
 <div id="demo">
-  姓: <input type="text" placeholder="First Name" v-model="firstName"><br>
+  姓: <input type="text" placeholder="First Name" v-model="firstName">  watch <br> 
   名: <input type="text" placeholder="Last Name" v-model="lastName"><br>
   <!--fullName1是根据fistName和lastName计算产生-->
-  姓名1(单向): <input type="text" placeholder="Full Name1" v-model="fullName1"><br>
-  姓名2(单向): <input type="text" placeholder="Full Name2" v-model="fullName2"><br>
-  姓名3(双向): <input type="text" placeholder="Full Name3" v-model="fullName3"><br>
+  fullName1(单向): <input type="text" placeholder="Full Name1" v-model="fullName1">  computed <br> 
+  <p>fullName1:{{fullName1}}   computed</p>   
 
-  <p>1:{{fullName1}}</p>
-  <p>2:{{fullName2}}</p>
-  <p>3:{{fullName3}}</p>
+  fullName2(单向): <input type="text" placeholder="Full Name2" v-model="fullName2"><br>
+  <p>fullName2:{{fullName2}}</p>
+  
+  fullName3(双向): <input type="text" placeholder="Full Name3" v-model="fullName3"><br>
+  <p>fullName3:{{fullName3}}</p>
 </div>
 </div>
 
@@ -41,19 +42,18 @@
     },
 
     // 计算属性配置: 值为对象
-    computed: {
+    computed: { // 计算实质监听所有事件
       fullName1 () { // 属性的get()
         console.log('fullName1()', this)
         return this.firstName + '-' + this.lastName
       },
-
       fullName3: {
-        // 当获取当前属性值时自动调用, 将返回值(根据相关的其它属性数据)作为属性值
+        // 回调函数, 当获取当前属性值时自动调用, 将返回值(根据相关的其它属性数据)作为属性值
         get () {
           console.log('fullName3 get()')
           return this.firstName + '-' + this.lastName
         },
-        // 当属性值发生了改变时自动调用, 监视当前属性值变化, 同步更新相关的其它属性值
+        // 回调函数, 当属性值发生了改变时自动调用, 监视当前属性值变化, 同步更新相关的其它属性值
         set (value) {// fullName3的最新value值  A-B23
           console.log('fullName3 set()', value)
           // 更新firstName和lastName
@@ -63,7 +63,6 @@
         }
       }
     },
-
     watch: {
       // 配置监视firstName
       firstName: function (value) { // 相当于属性的set

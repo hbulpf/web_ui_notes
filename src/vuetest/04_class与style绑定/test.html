@@ -32,9 +32,9 @@
 
 <div id="demo">
   <h2>1. class绑定: :class='xxx'</h2>
-  <p :class="myClass">xxx是字符串</p>
-  <p :class="{classA: hasClassA, classB: hasClassB}">xxx是对象</p>
-  <p :class="['classA', 'classB']">xxx是数组</p>
+  <p :class="myClass" class="classC">xxx是字符串</p>
+  <p :class="{classA: hasClassA, classB: hasClassB}">xxx是对象,使用 boolean 类型</p>
+  <p :class="['classA', 'classB']">xxx是数组,使用数组方式加 class</p>
 
   <h2>2. style绑定</h2>
   <p :style="{color:activeColor, fontSize}">:style="{ color: activeColor, fontSize: fontSize + 'px' }"</p>

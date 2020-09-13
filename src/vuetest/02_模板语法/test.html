@@ -42,6 +42,9 @@
   <h2>3. 指令二: 绑定事件监听</h2>
   <button v-on:click="test">点我</button>
   <button @click="test">点我</button>
+  <button @click="test2('哈哈')">弹出函数的入参</button>
+  <button @click="test4('哈哈',content)">弹出函数的2个入参</button>
+  <button @click="test3(content)">弹出vm的msg</button>
 
 </div>
 
@@ -57,6 +60,15 @@
     methods: {
       test () {
         alert('好啊!!!')
+      },
+      test2 (msg) {
+        alert(msg)
+      },
+      test3 (msg) {
+        alert(msg)
+      },
+      test4 (msg1,msg2) {
+        alert(msg1 + msg2)
       }
     }
   })
