@@ -10,7 +10,6 @@
 * [vue案例](docs/vue/vueDemo.md)
 * [vue使用elementUI](docs/vue/vue使用elementUI.md)
 * [vueSource](docs/vue/vueSource.md)
-* [vueTest](docs/vue/vueTest.md)
 * [vuex](docs/vue/vuex.md)
 * [axios与原生ajax对比](docs/vue/axios与原生ajax对比.md)
 * [vue使用ElementUI常见问题](docs/vue/vue使用ElementUI常见问题.md)
