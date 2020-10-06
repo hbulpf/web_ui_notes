@@ -20,7 +20,10 @@
 ## 其他
 
 * [静态网站生成器](docs/其他/静态网站生成器.md)
-* [静态网站生成器](docs/设置proxy.md)
+  * [docsify](docs/其他/docsify/README.md)
+  * [gitbook](docs/其他/gitbook/README.md)
+  * [hexo](docs/其他/hexo/README.md)
+* [设置proxy](docs/设置proxy.md)
 
 ## 学习计划
 
